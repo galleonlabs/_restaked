@@ -1,0 +1,11 @@
+{
+  "projects": {
+    "default": "eigenchad"
+  },
+  "targets": {},
+  "etags": {
+    "eigenchad": {
+      "extensionInstances": {}
+    }
+  }
+}
