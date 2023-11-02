@@ -8,7 +8,7 @@ function App() {
     <div className='m-auto flex-auto'>
       <div className='m-auto justify-center align-middle flex'>
         <a href="https://twitter.com/eigenchad" target="_blank">
-          <img src={eigenchad} className="w-32 h-32 rounded-lg border-[#1a0c6d] eigenchad border-2 logo" alt="eigenchad logo" />
+          <img src={eigenchad} className="w-32 h-32 rounded-md border-[#1a0c6d]  border-2 logo" alt="eigenchad logo" />
         </a>
       </div>
 
