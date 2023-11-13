@@ -51,7 +51,7 @@ const EthStakingInfo = () => {
   if (!data) return null; // or some fallback UI
 
   return (
-    <div className='pt-2'>
+    <div className='pt-2 justify-center text-center'>
       <span className={infoStyle}>Pods: {data.elNumPods}</span>
       <span className={`${infoStyle} ml-3`}>cbETH: {data.elCbETHBalance}</span>
       <span className={`${infoStyle} ml-3`}>RETH: {data.elRETHBalance}</span>
