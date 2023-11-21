@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 
-// Define the structure of the data we expect to receive
 interface StakingData {
   elCbETHBalance: string;
   elNumPods: string;
@@ -48,7 +47,7 @@ const EthStakingInfo = () => {
 
   if (loading) return <div>Loading...</div>;
   if (error) return <div>Error: {error}</div>;
-  if (!data) return null; // or some fallback UI
+  if (!data) return <></>; 
 
   return (
     <div className='pt-2'>
