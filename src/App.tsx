@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useState } from 'react';
 import eigenchad from './assets/eigenchad.jpeg'
 import './App.css'
 import EthStakingInfo from './StakingStatistics'
