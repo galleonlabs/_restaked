@@ -6,6 +6,7 @@ import { logEvent } from 'firebase/analytics';
 import { analytics } from './main';
 
 function App() {
+  // @ts-ignore
   const [tab, setTab] = useState('home')
 
   const handleLinkClick = (linkName: string) => {
@@ -18,14 +19,14 @@ function App() {
   return (
     <div className='m-auto flex-auto justify-center max-w-lg'
     >
-      <ul className="flex sticky top-0 z-50 justify-center text-center pb-16 sm:pb-72">
+      {/* <ul className="flex sticky top-0 z-50 justify-center text-center pb-16 sm:pb-72">
         <li className="">
           <button className={tab === 'home' ? 'inline-block w-42 text-sm border border-[#1a0c6d] rounded-bl-md py-1 px-3  text-white bg-[#1a0c6d]' : 'inline-block w-42 text-sm border border-[#1a0c6d] rounded-bl-md py-1 px-3  text-[#1a0c6d]'} onClick={() => setTab('home')} >Chad Home</button>
         </li>
         <li className="">
           <button className={tab === 'directory' ? 'inline-block w-42 text-sm border border-[#1a0c6d] rounded-br-md py-1 px-3  text-white bg-[#1a0c6d]' : 'inline-block w-42 text-sm border border-[#1a0c6d] rounded-br-md py-1 px-3  text-[#1a0c6d]'} onClick={() => setTab('directory')}>Chad Directory</button>
         </li>
-      </ul>
+      </ul> */}
       {tab === 'home' ? <div className='m-auto flex-auto'>
         <div className='m-auto justify-center align-middle flex'>
           <a href="https://twitter.com/eigenchad" target="_blank">
