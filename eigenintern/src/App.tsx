@@ -30,7 +30,7 @@ function App() {
                   alt=""
                 />
               </a>
-            <a href='https://app.eigenlayer.xyz' target='_blank' className='ml-3 uppercase rounded-md bg-[#37D699] px-3.5 py-2.5 text-md font-semibold text-black shadow-sm hover:text-black hover:opacity-80 focus-visible:outline border border-[#37D699]  focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#37D699]'>_Restaked
+            <a href='https://restaked.substack.com/' target='_blank' className='ml-3 uppercase rounded-md bg-[#37D699] px-3.5 py-2.5 text-md font-semibold text-black shadow-sm hover:text-black hover:opacity-80 focus-visible:outline border border-[#37D699]  focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#37D699]'>_Restaked
 
               <img
                 className="inline-block h-6 w-6 mb-1.5 ml-2 rounded-full"
