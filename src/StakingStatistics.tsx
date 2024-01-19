@@ -5,6 +5,8 @@ interface StakingData {
   elNumPods: string;
   elRETHBalance: string;
   elStETHBalance: string;
+  elSwETHBalance: string;
+  elETHxBalance: string;
 }
 
 const fetchStakingData = async () => {
@@ -19,7 +21,7 @@ const fetchStakingData = async () => {
   }
 
   const fetchedData = await response.json();
-  const properties = ['elCbETHBalance', 'elNumPods', 'elRETHBalance', 'elStETHBalance'];
+  const properties = ['elCbETHBalance', 'elNumPods', 'elRETHBalance', 'elStETHBalance', 'elSwETHBalance', 'elETHxBalance'];
   const filteredData: Partial<StakingData> = {};
 
   properties.forEach((property) => {
@@ -50,11 +52,13 @@ const EthStakingInfo = () => {
   if (!data) return <></>; 
 
   return (
-    <div className='pt-2'>
+    <div className='pt-2 justify-center text-center'>
       <span className={infoStyle}>Pods: {data.elNumPods}</span>
       <span className={`${infoStyle} ml-3`}>cbETH: {data.elCbETHBalance}</span>
       <span className={`${infoStyle} ml-3`}>RETH: {data.elRETHBalance}</span>
       <span className={`${infoStyle} ml-3`}>stETH: {data.elStETHBalance}</span>
+      <span className={`${infoStyle} ml-3`}>swETH: {data.elSwETHBalance}</span>
+      <span className={`${infoStyle} ml-3`}>ETHx: {data.elETHxBalance}</span>
       <p className='text-gray-400 text-xs mt-2 italic'>
         <svg className="mr-2 animate-pulse h-1.5 w-1.5 fill-gray-400 inline-flex " viewBox="0 0 6 6" aria-hidden="true">
           <circle cx={3} cy={3} r={3} />
