@@ -17,17 +17,14 @@ function App() {
   };
 
   return (
-    <div className='m-auto flex-auto justify-center max-w-lg mt-16 sm:mt-72'
+    <div className='m-auto flex-auto justify-center max-w-lg '
     >
-      {/* <ul className="flex sticky top-0 z-50 justify-center text-center pb-16 sm:pb-72">
+      <ul className="flex sticky top-0 z-50 justify-center text-center pb-16 sm:pb-72">
         <li className="">
-          <button className={tab === 'home' ? 'inline-block w-42 text-sm border border-[#1a0c6d] rounded-bl-md py-1 px-3  text-white bg-[#1a0c6d]' : 'inline-block w-42 text-sm border border-[#1a0c6d] rounded-bl-md py-1 px-3  text-[#1a0c6d]'} onClick={() => setTab('home')} >Chad Home</button>
+          <a className={ 'inline-block w-42 text-sm border border-[#1a0c6d] rounded-b-md py-1 px-3  text-[#1a0c6d]'} href='https://restaked.eigenchad.com' target={'_blank'} >Restaked Capital</a>
         </li>
-        <li className="">
-          <button className={tab === 'directory' ? 'inline-block w-42 text-sm border border-[#1a0c6d] rounded-br-md py-1 px-3  text-white bg-[#1a0c6d]' : 'inline-block w-42 text-sm border border-[#1a0c6d] rounded-br-md py-1 px-3  text-[#1a0c6d]'} onClick={() => setTab('directory')}>Chad Directory</button>
-        </li>
-      </ul> */}
-      {tab === 'home' ? <div className='m-auto flex-auto'>
+      </ul>
+       <div className='m-auto flex-auto'>
         <div className='m-auto justify-center align-middle flex'>
           <a href="https://twitter.com/eigenchad" target="_blank">
             <img src={eigenchad} className="w-32 h-32 rounded-md border-[#1a0c6d]  border-2 logo" alt="eigenchad logo" />
@@ -67,14 +64,7 @@ function App() {
           </div>
         </div>
 
-      </div> : tab === 'directory' ?
-        <>
-        
-        
-        
-        
-        
-        </> : <></>}
+      </div> 
 
 
     </div>
