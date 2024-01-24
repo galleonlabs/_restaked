@@ -21,7 +21,7 @@ function App() {
     >
       <ul className="flex sticky top-0 z-50 justify-center text-center pb-16 sm:pb-72">
         <li className="">
-          <a className={ 'inline-block w-42 text-sm border border-[#1a0c6d] rounded-b-md py-1 px-3  text-[#1a0c6d]'} href='https://restaked.eigenchad.com' target={'_blank'} >Restaked Capital</a>
+          <a className={'inline-block w-42 text-sm border border-[#1a0c6d] rounded-b-md py-1 px-3  text-[#1a0c6d]'} href='https://restaked.eigenchad.com' target={'_blank'} >_Restaked Capital Capital</a>
         </li>
       </ul>
        <div className='m-auto flex-auto'>
